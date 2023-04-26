@@ -182,3 +182,24 @@ python -c "import cirq_google; print(cirq_google.Sycamore)"
 #                                     (9, 4)
 ```
 
+## Usage
+
+### General Usage
+
+cd into the `./examples` and run the command like `python grover.py` to see the simulated results. Also use commands like  `python shor.py -h`  to seek for help.
+
+### Demo.py
+
+Run the command `python demo.py -h` to see the detailed instructions. 
+
+Demo.py is a script used to measure the running time of different algorithm.
+
+Here is an example used to measure the average running time of shors.py in different mode by running 5 times:
+
+```bash
+python demo.py shor.py --arguments "--order_finder naive 3871" "--order_finder quantum 3871" --runs 5
+```
+
+## Citation
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7465577.svg)](https://doi.org/10.5281/zenodo.7465577)
