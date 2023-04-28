@@ -200,6 +200,10 @@ Here is an example used to measure the average running time of shors.py in diffe
 python demo.py shor.py --arguments "--order_finder naive 3871" "--order_finder quantum 3871" --runs 5
 ```
 
+## Flaw
+
+When performing the simulation of the Shor’s algorithm, please be careful not to choose too large a number to avoid errors (because this is after all a classical computer simulation of quantum computing). After many experiments, it is best not to exceed 7500 (a rather strange number) in the Shor’s algorithm.
+
 ## Citation
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7465577.svg)](https://doi.org/10.5281/zenodo.7465577)
